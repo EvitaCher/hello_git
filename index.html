@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Python виш-лист</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        h1 {
+            color: #306998;
+            text-align: center;
+            border-bottom: 2px solid #306998;
+            padding-bottom: 10px;
+        }
+        
+        .project {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .project h2 {
+            color: #306998;
+            margin-top: 0;
+        }
+        
+        .priority {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            margin-left: 10px;
+        }
+        
+        .high { background-color: #ff6b6b; color: white; }
+        .medium { background-color: #ffd166; color: black; }
+        .low { background-color: #06d6a0; color: white; }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        .tech {
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎯 Мой Python виш-лист проектов</h1>
+    
+    <div class="project">
+        <h2>Telegram-бот для финансового учета
+            <span class="priority high">Высокий приоритет</span>
+        </h2>
+        <p><strong>Описание:</strong> Бот с возможностью добавления расходов/доходов, категоризацией, статистикой и визуализацией в графиках</p>
+        <p><strong>Технологии:</strong> <span class="tech">python-telegram-bot, SQLAlchemy, Pandas, Matplotlib</span></p>
+        <ul>
+            <li>Регистрация пользователей</li>
+            <li>Ежедневные уведомления</li>
+            <li>Экспорт в Excel</li>
+        </ul>
+    </div>
+
+    <div class="project">
+        <h2>Веб-скрапер новостей
+            <span class="priority medium">Средний приоритет</span>
+        </h2>
+        <p><strong>Описание:</strong> Система для сбора и анализа новостей с различных источников с тематической фильтрацией</p>
+        <p><strong>Технологии:</strong> <span class="tech">BeautifulSoup, Scrapy, Django, Celery</span></p>
+        <ul>
+            <li>Парсинг 10+ новостных сайтов</li>
+            <li>Анализ тональности текста</li>
+            <li>RSS-лента результатов</li>
+        </ul>
+    </div>
+
+    <div class="project">
+        <h2>API для анализа текстов
+            <span class="priority high">Высокий приоритет</span>
+        </h2>
+        <p><strong>Описание:</strong> REST API для NLP-задач: определение языка, извлечение ключевых слов, суммаризация</p>
+        <p><strong>Технологии:</strong> <span class="tech">FastAPI, NLTK, spaCy, Docker</span></p>
+        <ul>
+            <li>Swagger документация</li>
+            <li>Асинхронная обработка</li>
+            <li>Кэширование результатов</li>
+        </ul>
+    </div>
+
+    <div class="project">
+        <h2>Игра в жанре Roguelike
+            <span class="priority low">Низкий приоритет</span>
+        </h2>
+        <p><strong>Описание:</strong> Консольная игра с процедурной генерацией уровней, инвентарем и системой боя</p>
+        <p><strong>Технологии:</strong> <span class="tech">libtcod, NumPy, Pickle</span></p>
+        <ul>
+            <li>Генерация подземелий</li>
+            <li>Система характеристик персонажа</li>
+            <li>Сохранение прогресса</li>
+        </ul>
+    </div>
+
+    <div class="project">
+        <h2>Автоматизация работы с Excel
+            <span class="priority medium">Средний приоритет</span>
+        </h2>
+        <p><strong>Описание:</strong> Набор скриптов для автоматизации рутинных операций с Excel-файлами</p>
+        <p><strong>Технологии:</strong> <span class="tech">openpyxl, pandas, tkinter</span></p>
+        <ul>
+            <li>Консолидация данных из multiple файлов</li>
+            <li>Автоформатирование отчетов</li>
+            <li>GUI-интерфейс</li>
+        </ul>
+    </div>
+</body>
+</html>
